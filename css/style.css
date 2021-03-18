@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.judul {
+    padding: 150px;
+    background-image: url('../assets/1041686.png');
+    background-position: 100% 18%;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0px 6px 15px black;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #eabf9f;
+}
+
+.nav-child {
+    display: flex;
+    width: 33%;
+    justify-content: space-evenly;
+}
+
+.nav-child a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #1e212d;
+    text-decoration: none;
+}
+
+.nav-child a:hover {
+    font-weight: bold;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.add-padding {
+    padding-top: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    background-color: #b68973;
+    padding: 40px;
+}
+
+.card {
+    background-color: #faf3e0;
+    color: #1e212d;
+    padding: 20px;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-container .card {
+    text-align: center;
+    background-color: white;
+    width: 32%;
+    height: 400px;
+    padding: 0;
+}
+
+.flex-container .card img {
+    height: 100%;
+    object-fit: scale-down;
+}
+
+#content {
+    width: 80%;
+}
+
+.details {
+    height: 70%;
+    border-top: 1px solid #1e212d;
+    border-bottom: 1px solid #1e212d;
+}
+
+#description {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+    text-align: left;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#description p {
+    margin-top: 8px;
+}
+
+h2 {
+    margin: 0;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+aside {
+    text-align: center;
+    width: auto;
+}
+
+.profile {
+    background-image: linear-gradient(to bottom right, #1e212d, #2b2c33, #342247);
+    color: #faf3e0;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+
+aside .profile img {
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    background-color: #1e212d;
+}
+
+@media screen and (max-width: 1550px) {
+    main {
+        flex-direction: column;
+    }
+
+    #content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .details {
+        flex-direction: row;
+    }
+
+    .nav-child {
+        width: 70%;
+    }
+
+    .nav-child a {
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    .judul {
+        padding: 50px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .add-padding {
+        padding-top: 120px;
+    }
+
+    .nav-child {
+        text-align: center;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .nav-child a {
+        padding: 3px 10px;
+    }
+}
